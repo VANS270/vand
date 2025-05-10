@@ -1,0 +1,359 @@
+header
+{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items:center;
+    
+}
+.un
+/* c'est le premier navigateur */
+{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.deux
+/* deuxieme navigateur */
+{
+    border-radius: 10px;
+    border: 1px solid rgba(131, 133, 131, 0.87);
+    padding: 7px;
+    font-size: larger;
+    color: black;
+}
+.deux:hover
+/* ce que le visiteur voitb au survol du nav2 */
+{
+    border-radius: 10px;
+    border: 1px solid rgba(32, 33, 32, 0.87);
+    padding: 7px; 
+}
+.ref
+{
+    color: black;
+}
+
+.lien1,.lien2,.lien3,.lien4
+/* le lien vers formations , metier, etablissements, actualités */
+{
+    align-items: center;
+    display: flex;
+    color: black;
+    font-size: larger;
+}
+.lien1:hover
+/* ce qu on voit au survol de FORMATION */
+{
+text-decoration:underline;
+}
+
+a
+{
+ text-decoration: none;
+}
+hr
+{
+    color: rgb(122, 121, 121);
+}
+.h1
+/* c'est pour le premier h1 dans la page d'accueil */
+{
+    font-size: 70px;
+}
+.note_et_avis
+/* tout le bloc de toutes ecoles aura cette propriété */
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.ma_future_ecole
+{
+    background-color: rgb(100, 100, 199);
+    border-radius: 20px;
+    color: white;
+    padding: 10px;
+
+}
+.google
+{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-top: 80px;
+    justify-content: flex-start;
+}
+.star
+/* ce bloc est pour celui des etoiles près de google */
+{
+    align-items: center;
+    display: flex;
+    gap: 6px;
+
+}
+.image_ecole
+{
+    position: relative;
+}
+.image_princ
+/* l'image principale du logo qui sera superposé */
+{
+    display: block;
+}
+.logo_ecole
+/* ce selecteur est pour tous les logos DES ECOLES SUPERPOSé PARTIELLEMENT*/
+{
+    position: absolute;
+    bottom: -11px;
+    left: 7px;
+    
+    background-color: white;
+    box-shadow: 0.8px 0 1px rgba(0, 0, 0, 0.361);
+}
+svg
+{
+    color:white;
+}
+.nom_ecole
+/* Le paragraphe qui donne le nom de l'école avec les avis */
+{
+  
+   margin: 2Px; 
+}
+.lien_ecole
+/* lien vers chacune des ecoles */
+{
+    border-radius: 20px;
+    border: 1px rgb(86, 86, 84) solid;
+    color: black;
+    padding: 8px;
+    margin-left: 10px;
+}
+.lien_ecole:hover
+{
+    border-radius: 20px;
+    border: 1px rgb(86, 86, 84) solid;
+    color: black;
+    padding: 8px;
+    margin-left: 10px;
+    background-color: rgb(100, 100, 199);  
+}
+.liste_ecole
+/* Ce bloc contient .lien_ecole,.nom_ecole,.logo_ecole,.image_princ,.image_ecole */
+{
+    border: 1.3px rgb(86, 86, 84) solid;
+    border-radius: 20px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+    width: 280px;
+    background-color: white;
+}
+.liste_ecole:hover
+/* Je dois ajouter animation dessus */
+{
+    border: 1.4px rgb(100, 100, 199) solid;
+    border-radius: 20px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+    width: 280px; 
+}
+.grid_ecole
+{
+    display: flex;
+    flex-direction: row;
+    column-gap: 14px;
+    margin-left: 20px;
+}
+.campus
+{
+    background-color: rgba(231, 220, 222, 0.523);
+    padding-bottom: 50px;
+    padding-top: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.diplome
+/* ce bloc est pour les proprietes de chaque diplome */
+{
+    background-color: whitesmoke;
+    border-radius: 20px;
+    padding:10px;
+    border: 1px solid rgb(198, 198, 197);
+    justify-content: center;
+    text-align: center;
+    
+}
+.diplome:hover
+{
+    background-color: whitesmoke;
+    border-radius: 20px;
+    padding: 10px;
+    border: 1px solid black;
+}
+.grid_diplome
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin-left: 20%;
+    margin-right: 20%;
+    grid-column: 10px;
+    grid-row: 10px;
+    row-gap: 10px;
+    column-gap: 15px;
+}
+.p1
+/* le paragraphe des avis */
+{
+    max-width: 100%;
+    font-size: larger;
+}
+.pp1
+{
+    display: flex;
+    align-items: center;
+    gap:5px
+}
+.etud_avis
+{
+    width: 30%;
+}
+*
+{
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.bloc_avis
+{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+.bloc_pub
+/* c'est le lieN POUR chaque pub */
+{
+  display:grid;
+  grid-template-columns: 280px 280Px 280px ;
+  grid-template-rows: 248px 248px ;
+  row-gap: 22px;
+  column-gap: 20px;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+.mail
+{
+    border-radius: 30px;
+    border: 1.4px solid rgba(231, 220, 222, 0.523);
+    padding: 10px;
+    font-size: large;
+}
+.mail:focus
+{
+  outline: 2px solid rgb(240, 91, 91);
+  border: none;
+}
+
+.submit
+{
+    background-color: rgb(125, 0, 241);
+    border-radius: 30px;
+    padding: 10px;
+    color: white;
+    border: none;
+    
+}
+.newsletter
+{
+    position: relative;
+
+}
+article
+{
+    margin-top: 80px;
+    margin-bottom: 250px;
+}
+.orientation
+{
+    background-color: rgba(231, 220, 222, 0.523);
+    text-align: center;
+    padding: 50px;
+}
+.BTS,.licence
+{
+    background-color: rgb(202, 199, 199);
+    border-radius: 20px;
+    padding:5px;
+    justify-content: center;
+    text-align: center;
+}
+.BTS:hover
+{
+    background-color: rgb(155, 141, 204);
+    color: white;
+}
+.licence:hover
+{
+    background-color: rgb(155, 141, 204);
+    color: white;
+}
+.blocBTS,.bloclic
+{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    margin-left: 20%;
+    margin-right: 20%;
+    grid-column: 10px;
+    grid-row: 20px;
+    row-gap: 20px;
+    column-gap: 15px;
+}
+.recherches_bts,.recherches_licence
+{
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+}
+.social
+{
+    display: flex;
+    flex-direction: row;
+    gap: 13px;
+}
+.foot1
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+.foot2
+{
+    width: 80%;
+    text-align: center;
+    margin-top: 50px;
+    margin-left: 68px;
+   
+}
+.fr
+{
+    text-align: justify;
+    font-size: small;
+
+}
+footer
+{
+    background-color: blanchedalmond;
+    padding-top: 70px;
+    padding-bottom: 20px;
+}
